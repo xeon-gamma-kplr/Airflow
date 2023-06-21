@@ -1,0 +1,27 @@
+[2023-06-19T12:30:48.755+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: hello_world_dag_double.hello_task2 manual__2023-06-19T12:30:47.610541+00:00 [queued]>
+[2023-06-19T12:30:48.807+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: hello_world_dag_double.hello_task2 manual__2023-06-19T12:30:47.610541+00:00 [queued]>
+[2023-06-19T12:30:48.807+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-19T12:30:48.807+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-06-19T12:30:48.807+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-19T12:30:48.834+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): hello_task2> on 2023-06-19 12:30:47.610541+00:00
+[2023-06-19T12:30:48.908+0000] {standard_task_runner.py:55} INFO - Started process 12705 to run task
+[2023-06-19T12:30:48.911+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'hello_world_dag_double', 'hello_task2', 'manual__2023-06-19T12:30:47.610541+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/dag1.py', '--cfg-path', '/tmp/tmph205khmx']
+[2023-06-19T12:30:48.912+0000] {standard_task_runner.py:83} INFO - Job 109: Subtask hello_task2
+[2023-06-19T12:30:48.987+0000] {task_command.py:388} INFO - Running <TaskInstance: hello_world_dag_double.hello_task2 manual__2023-06-19T12:30:47.610541+00:00 [running]> on host 3a7666732caa
+[2023-06-19T12:30:49.055+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=hello_world_dag_double
+AIRFLOW_CTX_TASK_ID=hello_task2
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-19T12:30:47.610541+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-19T12:30:47.610541+00:00
+[2023-06-19T12:30:49.056+0000] {logging_mixin.py:137} INFO - #############################################
+[2023-06-19T12:30:49.056+0000] {logging_mixin.py:137} INFO -   hello, AIRFLOW!
+[2023-06-19T12:30:49.056+0000] {logging_mixin.py:137} INFO - 23-06-19 14:30:49
+[2023-06-19T12:30:49.056+0000] {logging_mixin.py:137} INFO - #############################################
+[2023-06-19T12:30:49.057+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-06-19T12:30:49.069+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=hello_world_dag_double, task_id=hello_task2, execution_date=20230619T123047, start_date=20230619T123048, end_date=20230619T123049
+[2023-06-19T12:30:49.123+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-06-19T12:30:49.140+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
